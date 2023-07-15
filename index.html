@@ -11,8 +11,8 @@
 
         <header id="#top">            
             <nav class="header_nav">
-                <a href="index.html"><img src="images/sample_logo_k.png"></a>
-                <ul>
+                <a href="index.html" class="logo"><img src="images/sample_logo_k.png"></a>
+                <ul class="global_nav">
                     <a href="index.html" class="global_nav_item"><li>Home</li></a>
                     <a href="menu.html" class="global_nav_item"><li>Menú</li></a>
                     <a href="contact.html" class="global_nav_item"><li>Contacto</li></a>
@@ -30,37 +30,40 @@
                     <h2>CONCEPTO</h2>
                     <p>Compromiso de DIC Café</p>
                 </div>
-                        <p>
-                            DIC Coffee utiliza granos de café <strong>DIC Beans</strong> de Rwanda. <br>
-                            Adquirido de caficultores contratados directamente. <br>
-                            Es una taza en la que puedes sentir la dulzura afrutada en la acidez y la riqueza bien equilibradas. <br>
-                            Por favor, disfrute de una taza de discernimiento. <br>
-                            <small>※El café es operado por Daivic Co., Ltd. bajo contrato con la granja.</small>
-                        </p>
-                        <img src="images/sample_concept.jpg">                
+                <div class="section_concept">
+                    <p>
+                        DIC Coffee utiliza granos de café <strong>DIC Beans</strong> de Rwanda. <br>
+                        Adquirido de caficultores contratados directamente. <br>
+                        Es una taza en la que puedes sentir la dulzura afrutada en la acidez y la riqueza bien equilibradas. <br>
+                        Por favor, disfrute de una taza de discernimiento. <br>
+                        <small>※El café es operado por Daivic Co., Ltd. bajo contrato con la granja.</small>
+                    </p>
+                    <img src="images/sample_concept.jpg">
+                </div>                                        
             </article>
-            <article class="section_inner">
+
+            <article class="section_inner menu_section">
                 <h2 class="section_title">MENU</h2>
                 <section>
                     <div class="center">
                         <h3 class="menu_title">Menú Recomendado</h3>
                     </div>
-                    <ul>
+                    <ul class="menu_panques">
                         <li>
+                            <img src="images/sample_pancake1.jpg">
                             <h4>Panques de arándanos</h4>
                             <p>
                                 Panqueques cubiertos con arándanos frescos! <br>
                                 ¥1,200
-                            </p>
-                            <img src="images/sample_pancake1.jpg">
+                            </p>                            
                         </li>
                         <li>
+                            <img src="images/sample_pancake2.jpg">
                             <h4>Panques de fresa</h4>
                             <p>
                                 Disfrute de la colaboración de las fresas y la miel. <br>
                                 ¥1,300
                             </p>
-                            <img src="images/sample_pancake2.jpg">
                         </li>
                     </ul>
                 </section>
@@ -112,15 +115,25 @@
         </section> 
 
         <footer class="footer">
-            <nav>                
-                <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="menu.html"><li>Menú</li></a>
-                    <a href="contact.html"><li>Contacto</li></a>
-                </ul>   
-                <a href="index.html"><img src="images/sample_logo_w.png"></a>
-                <span>&copy; DIVIC Corp. All RIGHTS RESERVED.</span>
-            </nav>
+            <nav>
+                <ul class="footer_nav">
+                  <a href="index.html" class="footer_nav_item">
+                    <li>Home</li>
+                  </a>
+                  <a href="menu.html" class="footer_nav_item">
+                    <li>Menu</li>
+                  </a>
+                  <a href="contact.html" class="footer_nav_item">
+                    <li>Contact</li>
+                  </a>
+                  <a href="index.html" class="footer_nav_item">
+                    <li>
+                      <img src="images/sample_logo_w.png" class="footer_logo">
+                    </li>
+                  </a>
+                </ul>
+              </nav>
+              <p class="footer_right">© DIVIC Corp. All RIGHTS RESERVED.</p>
         </footer>
     </body>
 </html>

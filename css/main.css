@@ -13,7 +13,10 @@
   height: 500px;
   background: center / cover no-repeat url("../images/sample_key.jpg");
   font-family: 'Noto Serif JP', serif;
-  font-weight: bold;
+  font-weight: bold;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .key h1{
@@ -51,15 +54,74 @@ ul li{
 
 .header_nav {
   background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: stretch;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.global_nav{
+  display: flex;
+  /*background:rgba(0,0,0,.6);*/
+  align-items: stretch;
 }
 
 .global_nav_item {
   color: #fff;
   text-decoration: none;
-  display: block;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .global_nav_item:hover{
   background-color: #fff;
   color: #42210b;
+}
+
+.logo {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 100%;
+}
+
+.section_concept{
+  display: flex;
+}
+
+.section_concept p{
+  width: 60%;
+  line-height: normal;
+}
+
+.section_concept img{
+  width: 35%;
+}
+
+.menu_section{
+  background: center / cover no-repeat url("../images/sample_menu_bg.jpg");
+  background-attachment: fixed;  
+}
+.menu_panques{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu_panques li{
+  
+  display: flex;
+  background-color: white;
+  box-shadow: #42210b;
+  margin: 10%;
+  width: 49%;
+}
+
+.menu_panques li img{
+  width: 55%;
 }

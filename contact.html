@@ -3,52 +3,85 @@
     <head>
         <meta charset="utf-8">
         <title>DIC Café</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/contact.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header id="#top">
-            <a href="index.html"><img src="images/sample_logo_k.png"></a>
-            <nav>
-                <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="menu.html"><li>Menú</li></a>
-                    <a href="contact.html"><li>Contacto</li></a>
+        <header id="#top" class="sub_header">            
+            <nav class="header_nav">
+                <a href="index.html" class="logo"><img src="images/sample_logo_k.png"></a>
+                <ul class="global_nav">
+                    <a href="index.html" class="global_nav_item"><li>Home</li></a>
+                    <a href="menu.html" class="global_nav_item"><li>Menú</li></a>
+                    <a href="contact.html" class="global_nav_item"><li>Contacto</li></a>
                 </ul>                
             </nav>
         </header>
 
         <section class="section_inner">
-            <h1>CONTACTO</h1>
-            <p>Contáctanos</p>
-            <table border="1">
-                <tr>
-                    <td>Nombre</td>
-                    <td>blank space</td>
-                </tr>
-                <tr>
-                    <td>Contacto</td>
-                    <td>blank space</td>
-                </tr>
-                <tr>
-                    <td>Área de Residencia</td>
-                    <td>blank space</td>
-                </tr>
-                <tr>
-                    <td>Contenido</td>
-                    <td>blank space</td>
-                </tr>
-            </table>
+            <div class="section_title">
+                <h1>CONTACTO</h1>
+                <p>Contáctanos</p>
+            </div> 
+            
+            <form action="#" method="post">
+                <table class="contact">
+                    <tr class="contact_line">
+                        <td class="contact_sign"><label for="name">Nombre</label></td>
+                        <td class="contact_input"><input type="text" name="name" id="name" placeholder="nombre"></td>
+                    </tr>
+                    <tr class="contact_line">
+                        <td class="contact_sign"><label for="phonenumber">Datos de Contacto</label></td>
+                        <td class="contact_input"><input type="tel" name="phonenumber" id="phonenumber" placeholder="Número de celular"></td>
+                    </tr>
+                    <tr class="contact_line">
+                        <td class="contact_sign"><label for="region">Región de Residencia</label></td>
+                        <td class="contact_input">
+                            <select name="region" id="region">
+                                <option value="0">Seleccione Región</option>
+                                <option value="1">Hokkaido</option>
+                                <option value="2">Tohoku</option>
+                                <option value="3">Kanto</option>
+                                <option value="4">Región Central</option>
+                                <option value="5">Kinki</option>
+                                <option value="6">Chugoku y Shikoku</option>
+                                <option value="7">Kyushu</option>
+                                <option value="8">Otro</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="contact_line">
+                        <td class="contact_sign"><label for="content">Contenido</label></td>
+                        <td class="contact_input"><textarea name="content" id="content" cols="30" rows="10" placeholder="Ingrese mensaje"></textarea></td>
+                    </tr>
+                </table>
+                <button type="reset" class="contact_btn reset_btn">Borrar Formulario</button>
+                <button type="submit" class="contact_btn submit_btn">Enviar Formulario</button>
+            </form>
         </section>
 
         <footer class="footer">
-            <nav>                
-                <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="menu.html"><li>Menú</li></a>
-                    <a href="contact.html"><li>Contacto</li></a>
-                </ul>   
-                <a href="index.html"><img src="images/sample_logo_w.png"></a>
-                <span>&copy; DIVIC Corp. All RIGHTS RESERVED.</span>
-            </nav>
+            <nav>
+                <ul class="footer_nav">
+                  <a href="index.html" class="footer_nav_item">
+                    <li>Home</li>
+                  </a>
+                  <a href="menu.html" class="footer_nav_item">
+                    <li>Menu</li>
+                  </a>
+                  <a href="contact.html" class="footer_nav_item">
+                    <li>Contact</li>
+                  </a>
+                  <a href="index.html" class="footer_nav_item">
+                    <li>
+                      <img src="images/sample_logo_w.png" class="footer_logo">
+                    </li>
+                  </a>
+                </ul>
+              </nav>
+              <p class="footer_right">© DIVIC Corp. All RIGHTS RESERVED.</p>
         </footer>
     </body>
 </html>
