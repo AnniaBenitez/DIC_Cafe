@@ -102,26 +102,118 @@ ul li{
 
 .section_concept img{
   width: 35%;
+  margin: 5% ;
 }
 
 .menu_section{
   background: center / cover no-repeat url("../images/sample_menu_bg.jpg");
   background-attachment: fixed;  
 }
+
 .menu_panques{
   display: flex;
   justify-content: space-around;
+  overflow: hidden; 
+  width: 100%; 
 }
 
-.menu_panques li{
-  
-  display: flex;
+.menu_panques ul{
+  justify-content: space-between;
+  display: inline-flex;
+}
+
+.menu_panques ul li{  
+  display: inline-flex;
   background-color: white;
-  box-shadow: #42210b;
-  margin: 10%;
+  box-shadow: 0 14px 18px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 5px;
   width: 49%;
+  overflow: hidden;
+  align-items: center;
+  margin: 1%;
 }
 
-.menu_panques li img{
+.menu_panques ul li img{
   width: 55%;
+}
+
+.descripcion{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin: 15px;
+  font-size: 125%;
+}
+
+.descripcion span{
+  text-align: right;
+  color: #42210b;
+}
+
+.carta_cafes {
+  background-color: antiquewhite;
+  border-radius: 15px; 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.carta_cafes li{
+  width: 49%;
+  display: flex;
+}
+
+.carta_cafes li img{
+  width: 20%;
+  padding: 2%;
+}
+
+dl{
+  display: flex;
+}
+
+dl dt{
+  width: 80px;
+}
+
+iframe{
+  width: 100%;
+}
+
+.footer{
+  background-color: #251e19;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  color: white;
+  justify-content: space-around;
+}
+
+.footer_nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav_del_ul_footer{
+  height: 50%;
+}
+
+.footer_nav_item{  
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.footer_logo{
+  width: 80px;
+}
+
+.footer_right{
+  display: flex;
 }
