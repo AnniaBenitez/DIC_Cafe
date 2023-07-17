@@ -159,6 +159,7 @@ ul li{
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+  margin: 20px;
 }
 
 .carta_cafes li{
